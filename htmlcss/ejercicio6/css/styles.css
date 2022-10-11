@@ -1,0 +1,13 @@
+.titulo_galeria {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ECECEC;
+}
+
+.contenedor .img_gallery {
+    width: 300px;
+}
