@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio_02",
+  "version": "1.0.0",
+  "description": "This is the second exercise of javascript at Open BootCamp",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js",
+    "test": "echo \" Error: no test specified○\" && exit 1"
+  },
+  "keywords": [
+    "second_project"
+  ],
+  "author": "Jose Apaza",
+  "license": "ISC"
+}
