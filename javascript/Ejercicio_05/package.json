@@ -1,0 +1,14 @@
+{
+  "name": "ejercicio_05",
+  "version": "1.0.0",
+  "description": "This is the fifth exercise in javascript at Open Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Jose Apaza",
+  "license": "ISC"
+}
