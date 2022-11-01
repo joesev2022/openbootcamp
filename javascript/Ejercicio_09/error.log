@@ -1,0 +1,3 @@
+{"level":"error","message":null,"service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","message":"ERROR! ReferenceError: numera is not defined","service":"user-service"}

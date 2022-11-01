@@ -1,0 +1,6 @@
+{"level":"info","message":"Hola mundo","service":"user-service"}
+{"level":"info","message":"Holaaaaaaaaaaaa","service":"user-service"}
+{"level":"error","message":null,"service":"user-service"}
+{"level":"info","message":"Holaaaaaaaaaaaa","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","message":"ERROR! ReferenceError: numera is not defined","service":"user-service"}

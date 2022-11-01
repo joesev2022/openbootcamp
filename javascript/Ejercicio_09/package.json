@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio_09",
+  "version": "1.0.0",
+  "description": "This is the ninth exercise in javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Jose Apaza",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
+}
