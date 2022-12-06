@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Contacto } from '../../models/contacto.class';
 import { ESTADO } from '../../models/estado.enum';
 import ContactoComponent from '../pure/contacto';
+import ContactoForm from '../pure/forms/contacto_form';
 
 
 const ContactoListComponent = () => {
@@ -30,6 +31,14 @@ const ContactoListComponent = () => {
         setContactos(tempContactos)
     }
 
+    const addContact = (contacto) => {
+        console.log('A punto de registrar a', contacto);
+        const tempContactos = [...contactos]
+        console.log('Estoy en el add Contact: ', contacto);
+        tempContactos.push(contacto)
+        setContactos(tempContactos)
+    }
+
     return (
         <div className='container mt-4'>
             <div>
@@ -47,7 +56,15 @@ const ContactoListComponent = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {
+                    {   contactos.length === 0 ?
+                        <tr>
+                            <td colSpan={5}>
+                                <div className="alert alert-dismissible alert-warning">
+                                <h4 className="alert-heading">Aviso!</h4>
+                                <p className="mb-0">No hay contactos.</p>
+                                </div>
+                            </td>
+                        </tr> :
                         contactos.map((contacto, index) => {
                             return (
                                 <ContactoComponent 
@@ -64,6 +81,9 @@ const ContactoListComponent = () => {
             </div>
             {/* TODO: Aplicar un For/Map para renderizar un a lista */}
             {/* <ContactoComponent contacto={contacto_1}></ContactoComponent> */}
+            <div>
+                <ContactoForm add={addContact}/>
+            </div>
         </div>
     );
 };
